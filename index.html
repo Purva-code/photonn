@@ -79,7 +79,10 @@
             </div>
 
             </div>
-            <div id="extratext">abcdskdksknsknkxnakNJNDJDNKDBBBBBBBBBB</div>
+            <div id="extratext">
+              With an affinity to entrust
+              <div id="normal">We, PHOTON TRADING & MARINE SERVICES LLP believe in establishing a partnership not just limited to business but more in resonance to trust and work ethics. We assure to work beyond the contractual requirements and hope to be a part of your success in the ever growing marine industry. </div>
+            </div>
             <div class="parallax2"></div>
             <div id="about-nav"></div>
             <div id="space"></div>
@@ -170,7 +173,9 @@ Marine fuel and lubricants shall be responsibly delivered in compliance with the
   </div>
                 </div>
                 <div id="fc">
+                  <div id="fc2" class="fc2">
                     <img src="6.jpg" alt="Avatar" class="image">
+                  </div>
   <div class="overlay">
     <div class="text">
         <div id="overlay-head">Iron work and roofing</div>
@@ -178,7 +183,7 @@ Marine fuel and lubricants shall be responsibly delivered in compliance with the
       </div>
   </div>
                 </div>
-                <div id="fc">
+                <div id="fc" class="fc3">
                     <img src="7.jpg" alt="Avatar" class="image">
   <div class="overlay">
     <div class="text">
@@ -187,7 +192,7 @@ Marine fuel and lubricants shall be responsibly delivered in compliance with the
       </div>
   </div>
                 </div>
-                <div id="fc">
+                <div id="fc" class="fc4">
                     <img src="8.jpg" alt="Avatar" class="image">
   <div class="overlay">
     <div class="text">
@@ -197,6 +202,46 @@ Marine fuel and lubricants shall be responsibly delivered in compliance with the
   </div>
                 </div>
             </div>
+            </div>
+            <div>
+              <div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="5.jpg" alt="Los Angeles" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Supply of marine fuels and lube oils along with provisions for the ship store and fresh water.</h3>
+        <p></p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="8.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Prioritizing safety regulations and sustainable development. Engaging in environment friendly end-to-end delivery and sanctioning of marine fuels. Trust ensured on and off the shore.</h3>
+        <p></p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="7.jpg" alt="New York" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Accountability and transparency ensured at inter-organization level and effectively mitigating disputes to maintain integrity enforcing strong morales.</h3>
+        <p></p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
             </div>
             <div id="client-section">
                 <div id="client-head">An Eco-Friendly Approach</div>
@@ -219,7 +264,8 @@ Marine fuel and lubricants shall be responsibly delivered in compliance with the
                 <div id="contact-us">
                     <div id="contact-us-head">Contact Us</div>
                     <div id="contact-content">
-                        <div>Suite -313, 64 E, Sant Tukdoji Maharaj Road, Carnac Bunder, Mumbai-400009, India</div>
+                        <div>Suite -313, 64 E, Ashirwad Building, Sant Tukdoji Maharaj Road, Carnac Bunder, Masjid Bunder, Mumbai-400009, India
+</div>
                         <div>photon.tms@gmail.com</div>
                         <div>Mob:&nbsp;9967804485</div>
                         <div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 9969126643</div>
@@ -229,10 +275,141 @@ Marine fuel and lubricants shall be responsibly delivered in compliance with the
                     </div>
                     </div>
             </div>
+            <div id="copyright">&copy; 2020 by Photon
+              <div id="corner">
+            <div id="corner-image">
+              <img src="background.png">
             </div>
-            <div id="copyright">&copy; 2020 by Photon</div>
+            
+          </div>
+            </div>
+            
+            </div>
+            
           
         </div>
-        
+        <script type="text/javascript">
+          /* Store the element in el */
+let el = document.getElementById('fc')
+
+/* Get the height and width of the element */
+const height = el.clientHeight
+const width = el.clientWidth
+
+/*
+  * Add a listener for mousemove event
+  * Which will trigger function 'handleMove'
+  * On mousemove
+  */
+el.addEventListener('mousemove', handleMove)
+
+/* Define function a */
+function handleMove(e) {
+  /*
+    * Get position of mouse cursor
+    * With respect to the element
+    * On mouseover
+    */
+  /* Store the x position */
+  const xVal = e.layerX
+  /* Store the y position */
+  const yVal = e.layerY
+  
+  /*
+    * Calculate rotation valuee along the Y-axis
+    * Here the multiplier 20 is to
+    * Control the rotation
+    * You can change the value and see the results
+    */
+  const yRotation = 20 * ((xVal - width / 2) / width)
+  
+  /* Calculate the rotation along the X-axis */
+  const xRotation = -20 * ((yVal - height / 2) / height)
+  
+  /* Generate string for CSS transform property */
+  const string = 'perspective(500px) scale(1.1) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)'
+  
+  /* Apply the calculated transformation */
+  el.style.transform = string
+}
+
+/* Add listener for mouseout event, remove the rotation */
+el.addEventListener('mouseout', function() {
+  el.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)'
+})
+
+/* Add listener for mousedown event, to simulate click */
+el.addEventListener('mousedown', function() {
+  el.style.transform = 'perspective(500px) scale(0.9) rotateX(0) rotateY(0)'
+})
+
+/* Add listener for mouseup, simulate release of mouse click */
+el.addEventListener('mouseup', function() {
+  el.style.transform = 'perspective(500px) scale(1.1) rotateX(0) rotateY(0)'
+})
+
+
+
+
+
+/* Store the element in el */
+let el = document.getElementById('fc2')
+
+/* Get the height and width of the element */
+const height = el.clientHeight
+const width = el.clientWidth
+
+/*
+  * Add a listener for mousemove event
+  * Which will trigger function 'handleMove'
+  * On mousemove
+  */
+el.addEventListener('mousemove', handleMove)
+
+/* Define function a */
+function handleMove(e) {
+  /*
+    * Get position of mouse cursor
+    * With respect to the element
+    * On mouseover
+    */
+  /* Store the x position */
+  const xVal = e.layerX
+  /* Store the y position */
+  const yVal = e.layerY
+  
+  /*
+    * Calculate rotation valuee along the Y-axis
+    * Here the multiplier 20 is to
+    * Control the rotation
+    * You can change the value and see the results
+    */
+  const yRotation = 20 * ((xVal - width / 2) / width)
+  
+  /* Calculate the rotation along the X-axis */
+  const xRotation = -20 * ((yVal - height / 2) / height)
+  
+  /* Generate string for CSS transform property */
+  const string = 'perspective(500px) scale(1.1) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)'
+  
+  /* Apply the calculated transformation */
+  el.style.transform = string
+}
+
+/* Add listener for mouseout event, remove the rotation */
+el.addEventListener('mouseout', function() {
+  el.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)'
+})
+
+/* Add listener for mousedown event, to simulate click */
+el.addEventListener('mousedown', function() {
+  el.style.transform = 'perspective(500px) scale(0.9) rotateX(0) rotateY(0)'
+})
+
+/* Add listener for mouseup, simulate release of mouse click */
+el.addEventListener('mouseup', function() {
+  el.style.transform = 'perspective(500px) scale(1.1) rotateX(0) rotateY(0)'
+})
+        </script>
     </body>
 </html>

@@ -209,7 +209,7 @@ nav{
 #extratext{
     font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
   font-weight:50; 
-/*  background: rgba(0,0,0,0.3);*/
+  /*background: rgba(0,0,0,0.3);*/
   color: white;
   padding: 2rem;
   width: 100%;
@@ -219,7 +219,7 @@ nav{
     /*margin-top: 2em;*/
   font-size: 2rem;
     text-align: center;
-    /*text-transform: uppercase;*/
+    text-transform: uppercase;
     font-weight: 50;
     letter-spacing: 2px;
     z-index: 2;
@@ -227,7 +227,14 @@ nav{
     background:none;
     margin-left: auto;
     margin-right: auto;
+    font-weight: bold;
     overflow-wrap: break-word;
+}
+#normal{
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: normal;
+    text-transform: none;
 }
 #arrow{
 /*    margin-left: 150px;*/
@@ -337,7 +344,7 @@ nav{
      min-height: 520px; 
 
   /* Create the parallax scrolling effect */
-  /*background-attachment: fixed;*/
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -361,6 +368,25 @@ nav{
     padding-bottom: 30px;
     text-align: center;
 }
+#demo{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+.carousel-inner img {
+    /*margin-left: 350px;*/
+    margin-right: auto;
+    width: 90%;
+    height: 50vh;
+    /*box-shadow: 5px 5px 10px 5px */
+    /*box-shadow: 5px 5px 10px 10px #EFEFF1*/
+    box-shadow: 5px 5px 10px 5px #F0F0F2;
+    max-width: 100%;
+    /*margin-bottom: 20px;*/
+    display: block;
+    margin: 0 auto;
+
+  }
 #fade-container{
     background-color: white;
     padding-bottom: 50px;
@@ -379,6 +405,46 @@ nav{
 }
 #fc{
     position: relative;
+}
+.fc1{
+    background-image: url("5.jpg");
+    display: block;
+  /*height: 200px;*/
+  /*width: 300px;*/
+  background-color: grey;
+  /*margin: 0 auto;*/
+  transition: box-shadow 0.1s, transform 0.1s;
+  
+  /*
+    * Adding image to the background
+    * No relation to the hover effect.
+    */
+  /*background-size: 100%;*/
+  background-repeat: no-repeat;
+}
+.fc1:hover {
+  box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+  cursor: pointer;
+}
+.fc2{
+    background-image: url("6.jpg");
+    display: block;
+  /*height: 200px;*/
+  /*width: 300px;*/
+  background-color: grey;
+  /*margin: 0 auto;*/
+  transition: box-shadow 0.1s, transform 0.1s;
+  
+  /*
+    * Adding image to the background
+    * No relation to the hover effect.
+    */
+  /*background-size: 100%;*/
+  background-repeat: no-repeat;
+}
+.fc2:hover {
+  box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+  cursor: pointer;
 }
 #fade img{
     width: 400px;
@@ -421,6 +487,7 @@ nav{
     color: gray;
 }
 #client-section{
+    margin-top: 80px;
     background-color: #F7F7F7;
     text-align: center;
 }
@@ -439,6 +506,17 @@ nav{
     margin-left: 300px;
     margin-right: 300px;
     padding-bottom: 50px;
+}
+#contact{
+    position: relative;
+}
+#corner{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#corner-image{
+    z-index: 0;
 }
 #contact-head{
     font-size: 50px;
@@ -551,6 +629,10 @@ nav{
     padding: 20px;
     font-size: 12px;
     text-align: center;
+    z-index: 99;
+}
+#corner-image{
+
 }
 @media(max-width:1550px) and (min-width:1450px){
 
@@ -580,7 +662,7 @@ nav{
         margin-right: 200px;
     }
     #extratext{
-        margin-top: 4em;
+        margin-top: 1.5em;
         font-size: 1.4rem;
         margin-left: 60px;
         margin-left: auto;
@@ -600,7 +682,7 @@ nav{
         width: 83%;
     }
     #extratext{
-        margin-top: 4em;
+        margin-top: 2.5em;
         font-size: 1.4rem;
         margin-left: 60px;
         margin-left: auto;
@@ -642,12 +724,15 @@ nav{
         width: 83%;
     }
     #extratext{
-        margin-top: 4em;
-        font-size: 1.4rem;
+        margin-top: 2em;
+        font-size: 1.2rem;
         margin-left: 60px;
         margin-left: auto;
         margin-right: auto;
         width: 60%;
+    }
+    #normal{
+        font-size: 15px;
     }
     .grid{
         margin-left: 100px;
@@ -680,6 +765,22 @@ nav{
         margin-left: 250px;
         margin-right: 250px;
     }
+    #copyright{
+        /*margin-top: -100px;*/
+        /*margin-bottom: 50px;*/
+        padding-bottom: 50px;
+        padding-top: 0;
+        /*z-index: 1000;*/
+    }
+    #corner{
+        /*position: relative;*/
+    }
+    #corner-image img{
+        width: 98vh;
+        height: 50%;
+        right: 0;
+        /*position: absolute;*/
+    }
 }
 @media(max-width:1249px) and (min-width:1217px){
     #text{
@@ -687,7 +788,7 @@ nav{
         width: 83%;
     }
     #extratext{
-        margin-top: 3em;
+        margin-top: 2.5em;
         font-size: 1.4rem;
         margin-left: 60px;
         margin-left: auto;
@@ -726,6 +827,22 @@ nav{
         margin-left: 250px;
         margin-right: 250px;
     }
+     #copyright{
+        /*margin-top: -100px;*/
+        /*margin-bottom: 50px;*/
+        padding-bottom: 50px;
+        padding-top: 0;
+        /*z-index: 1000;*/
+    }
+    #corner{
+        /*position: relative;*/
+    }
+    #corner-image img{
+        width: 98vh;
+        height: 50%;
+        right: 0;
+        /*position: absolute;*/
+    }
 }
 @media(max-width:1216px) and (min-width:1080px){
     #text{
@@ -733,12 +850,15 @@ nav{
         width: 83%;
     }
     #extratext{
-        margin-top: 4em;
+        margin-top: 2.5em;
         font-size: 1.4rem;
         margin-left: 60px;
         margin-left: auto;
         margin-right: auto;
         width: 60%;
+    }
+    #normal{
+        font-size: 14px;
     }
     .navbar-nav{
     margin-left: 0px;
@@ -782,6 +902,25 @@ nav{
         margin-left: 200px;
         margin-right: 200px;
     }
+     #copyright{
+        /*margin-top: -100px;*/
+        /*margin-bottom: 50px;*/
+        padding-bottom: 80px;
+        padding-top: 0;
+        /*z-index: 1000;*/
+    }
+    #corner{
+        /*position: relative;*/
+    }
+    #corner-image img{
+        width: 97vh;
+        height: 50%;
+        right: 0;
+        /*position: absolute;*/
+    }
+    #demo{
+        width: 75%;
+    }
 }
 @media(max-width:1079px) and (min-width:950px){
     .navbar-nav{
@@ -793,11 +932,14 @@ nav{
         margin-top: -12em;
     }
     #extratext{
-        margin-top: 5em;
+        margin-top: 3.5em;
         font-size: 1.2rem;
         margin-left: auto;
         margin-right: auto;
         width: 53%;
+    }
+    #normal{
+        font-size: 14px;
     }
     .grid{
         margin-left: 220px;
@@ -845,6 +987,25 @@ nav{
     .yellow{
         display: none;
     }
+     #copyright{
+        /*margin-top: -100px;*/
+        /*margin-bottom: 50px;*/
+        padding-bottom: 160px;
+        padding-top: 0;
+        /*z-index: 1000;*/
+    }
+    #corner{
+        /*position: relative;*/
+    }
+    #corner-image img{
+        width: 90vh;
+        height: 50%;
+        right: 0;
+        /*position: absolute;*/
+    }
+    #demo{
+        width: 80%;
+    }
 }
 
 @media(max-width:950px) and (min-width:785px){
@@ -860,9 +1021,12 @@ nav{
         margin-top: -15em;
     }
     #extratext{
-        margin-top: 6em;
+        margin-top: 5.5em;
         font-size: 1.2rem;
-        margin-left: 150px;
+        /*margin-left: 150px;*/
+    }
+    #normal{
+        font-size: 13px;
     }
     .grid{
         margin-left: 80px;
@@ -921,6 +1085,25 @@ nav{
         width: 300px;
         height: 300px;
     }
+     #copyright{
+        /*margin-top: -100px;*/
+        /*margin-bottom: 50px;*/
+        padding-bottom: 150px;
+        padding-top: 0;
+        /*z-index: 1000;*/
+    }
+    #corner{
+        /*position: relative;*/
+    }
+    #corner-image img{
+        width: 85vh;
+        height: 50%;
+        right: 0;
+        /*position: absolute;*/
+    }
+    #demo{
+        width: 80%;
+    }
 }
 @media(max-width:784px) and (min-width:690px){
     video{
@@ -934,7 +1117,10 @@ nav{
     #extratext{
         margin-top: 10em;
         font-size: 1rem;
-        margin-left: 120px;
+        /*margin-left: 120px;*/
+    }
+    #normal{
+        font-size: 12px;
     }
     .grid{
         margin-left: 90px;
@@ -995,6 +1181,25 @@ nav{
         width: 300px;
         height: 300px;
     }
+     #copyright{
+        /*margin-top: -100px;*/
+        /*margin-bottom: 50px;*/
+        padding-bottom: 150px;
+        padding-top: 0;
+        /*z-index: 1000;*/
+    }
+    #corner{
+        /*position: relative;*/
+    }
+    #corner-image img{
+        width: 85vh;
+        height: 50%;
+        right: 0;
+        /*position: absolute;*/
+    }
+    #demo{
+        width: 80%;
+    }
 }
 @media(max-width:689px) and (min-width:500px){
     video{
@@ -1007,9 +1212,13 @@ nav{
         margin-top: -20em;
     }
     #extratext{
-        margin-top: 10em;
+        padding-top: 80px;
+        /*margin-top: -50em;*/
         font-size: 1rem;
-        margin-left: 60px;
+        /*margin-left: 60px;*/
+    }
+    #normal{
+        font-size: 12px;
     }
     .grid{
         margin-left: 50px;
@@ -1118,6 +1327,25 @@ nav{
     #overlay-text{
         font-size: 6px;
     }
+     #copyright{
+        /*margin-top: -100px;*/
+        /*margin-bottom: 50px;*/
+        padding-bottom: 150px;
+        padding-top: 0;
+        /*z-index: 1000;*/
+    }
+    #corner{
+        /*position: relative;*/
+    }
+    #corner-image img{
+        width: 80vh;
+        height: 50%;
+        right: 0;
+        /*position: absolute;*/
+    }
+    #demo{
+        width: 90%;
+    }
 }
 @media(max-width:599px) and (min-width:499px){
     video{
@@ -1130,6 +1358,9 @@ nav{
     }
     #extratext{
         margin-top: 4em;
+    }
+    #normal{
+        font-size: 12px;
     }
     .grid{
         margin-left: 30px;
@@ -1238,6 +1469,25 @@ nav{
     #overlay-text{
         font-size: 6px;
     }
+    #copyright{
+        /*margin-top: -100px;*/
+        /*margin-bottom: 50px;*/
+        padding-bottom: 100px;
+        padding-top: 0;
+        /*z-index: 1000;*/
+    }
+    #corner{
+        /*position: relative;*/
+    }
+    #corner-image img{
+        /*width: 70%;*/
+        height: 50%;
+        /*right: 0;*/
+        /*position: absolute;*/
+    }
+    #demo{
+        width: 90%;
+    }
     
 }
 @media(max-width:499px){
@@ -1257,6 +1507,9 @@ nav{
     }
     #extratext{
         margin-top: 4em;
+    }
+    #normal{
+        font-size: 11px;
     }
     .grid img{
         
@@ -1391,6 +1644,28 @@ nav{
     }
     #overlay-text{
         font-size: 6px;
+    }
+    #copyright{
+        /*margin-top: 50px;*/
+    }
+     #copyright{
+        /*margin-top: -100px;*/
+        /*margin-bottom: 50px;*/
+        padding-bottom: 150px;
+        padding-top: 0;
+        /*z-index: 1000;*/
+    }
+    #corner{
+        /*position: relative;*/
+    }
+    #corner-image img{
+        width: 70vh;
+        height: 50%;
+        right: 0;
+        /*position: absolute;*/
+    }
+    #demo{
+        width: 96%;
     }
 
 }
